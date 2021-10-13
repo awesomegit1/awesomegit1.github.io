@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <form action="mail.php" method="post">
+            <fieldset class="form__fieldset">
+              <legend class="form__heading">Форма отправки</legend>
+            <input class="modifier form-text" type="text" required name="name" placeholder="Фамилия, имя и отчество*">
+            <input class="modifier form-email" type="email" required name="email" placeholder="E-mail*">
+	        <input class="modifier form-email" type="int" required name="phone" placeholder="Номер телефона*">
+	        <input class="modifier form-email" type="date" required name="date" placeholder="Дата рождения">
+            <textarea class="modifier form-textarea" name="message" placeholder="Сообщение"></textarea>
+            <div class="bottom">
+            <button class="bottom__btn">
+              Отправить данные
+            </button>
+            <input type="checkbox" class="form__checkbox" id="happy" required name="happy" value="yes">
+            <label for="happy">Согласен на обработку данных</label>
+            </div>
+          </fieldset>
+          </form>
+    </div>   
+</body>
+</html>
